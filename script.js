@@ -6249,53 +6249,48 @@ console.log(foo());
 //let dataFile = require('4x4.json');
 
 
-var example = document.getElementById("example"),
+let example = document.getElementById("example"),
     ctx     = example.getContext('2d');
-ctx.fillStyle = 'aliceblue';
-ctx.fillRect(100, 50, 512, 512);
-/*
-ctx.fillStyle = 'rgb(200, 0, 0)';
-ctx.fillRect(10, 10, 50, 50);
+    ctx.fillStyle = 'aliceblue';
+    ctx.fillRect(0, 0, 512, 512);
 
-ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
-ctx.fillRect(30, 30, 50, 50);
 
- */
-
-let size1 = 512;
-let areas = 4;
-let scale = size1/areas;
-/*
-for (var x=0; x<=arr[0].length; x++) {
-    ctx.fillStyle = '#' + arr[0][x];
-    ctx.fillRect(x*scale, 0 , scale, scale);
-}
- */
- // рабочий алгоритм !!!
-for (var x=0; x<arr.length; x++) {
-    arr[x].forEach(function(item, i) {
-        ctx.fillStyle = '#' + item;
-        ctx.fillRect(x*scale, i*scale, scale, scale);
-    });
-}
-
+let size = 512;
+let areas1 = 4;
 let areas2 = 32;
-let scale2 = size1/areas2;
+let scale;
+//рисование по переключению
+let tracery=document.getElementById('tracery');
+tracery.addEventListener('click',function(){
+    scale = size/areas1;
+    for (let x=0; x<arr.length; x++) {
+        arr[x].forEach(function(item, i) {
+            ctx.fillStyle = '#' + item;
+            ctx.fillRect(x*scale, i*scale, scale, scale);
+        });
+    }
 
-for (x=0; x<arr2.length; x++) {
-    arr2[x].forEach(function(item, i) {
-        function rgb(r, g, b){
-            return "rgb("+r+","+g+","+b+")";
-        }
-        const color= rgb(arr2[x][i][0], arr2[x][i][1], arr2[x][i][2]);
-        ctx.fillStyle = color;
-        ctx.fillRect(x*scale2, i*scale2, scale2, scale2);
-        //console.log('i '+i+',x '+x);
-    });
-}
+});
 
-//let imageData = new ImageData(arr2, 32, 32);
-//ctx.putImageData(imageData, scale2, scale2);
-let img = new Image();  // Создание нового объекта изображения
-img.src = 'image.png';  // Путь к изображению которое необходимо нанести на холст
-ctx.drawImage(img, 0, 0, 512, 512);
+let logo=document.getElementById('logo');
+logo.addEventListener('click',function(){
+    scale = size/areas2;
+    for (let x=0; x<arr2.length; x++) {
+        arr2[x].forEach(function(item, i) {
+            function rgb(r, g, b){
+                return "rgb("+r+","+g+","+b+")";
+            }
+            const color= rgb(arr2[x][i][0], arr2[x][i][1], arr2[x][i][2]);
+            ctx.fillStyle = color;
+            ctx.fillRect(x*scale, i*scale, scale, scale);
+        });
+    }
+});
+
+let RSSchool=document.getElementById('rs-pic');
+RSSchool.addEventListener('click',function(){
+    let img = new Image();  // Создание нового объекта изображения
+    img.src = 'image.png';  // Путь к изображению которое необходимо нанести на холст
+    ctx.drawImage(img, 0, 0, 512, 512);
+});
+
