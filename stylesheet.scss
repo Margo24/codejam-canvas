@@ -68,4 +68,50 @@ main {
     justify-content: space-between;
   }
 
+  .switch {
+    font-family: Arial, Tahoma, serif;
+    font-size: 21px;
+  }
+
+  form {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    //box-shadow: 5px 5px 10px #252525;
+  }
+
+  .picture-choice {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  label {
+    margin-right: 15px;
+    line-height: 32px;
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+  }
+
+  input:checked {
+    border: 6px solid black;
+  }
+
 }

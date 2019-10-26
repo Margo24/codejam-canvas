@@ -60,5 +60,41 @@ main .user-panel {
   margin: 30px;
   justify-content: space-between;
 }
+main .switch {
+  font-family: Arial, Tahoma, serif;
+  font-size: 21px;
+}
+main form {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main .picture-choice {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+main label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+main input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+main input:checked {
+  border: 6px solid black;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */
