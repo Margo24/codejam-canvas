@@ -6247,8 +6247,7 @@ console.log(foo());
 */
 
 //let dataFile = require('4x4.json');
-//let Data = JSON.parse(a);
-//console.log(Data);
+
 
 var example = document.getElementById("example"),
     ctx     = example.getContext('2d');
@@ -6272,19 +6271,18 @@ for (var x=0; x<=arr[0].length; x++) {
     ctx.fillRect(x*scale, 0 , scale, scale);
 }
  */
-/*  рабочий алгоритм !!!
+ // рабочий алгоритм !!!
 for (var x=0; x<arr.length; x++) {
     arr[x].forEach(function(item, i) {
         ctx.fillStyle = '#' + item;
         ctx.fillRect(x*scale, i*scale, scale, scale);
-        console.log('i '+i+',x '+x);
     });
 }
- */
+
 let areas2 = 32;
 let scale2 = size1/areas2;
 
-for (var x=0; x<arr2.length; x++) {
+for (x=0; x<arr2.length; x++) {
     arr2[x].forEach(function(item, i) {
         function rgb(r, g, b){
             return "rgb("+r+","+g+","+b+")";
@@ -6292,8 +6290,12 @@ for (var x=0; x<arr2.length; x++) {
         const color= rgb(arr2[x][i][0], arr2[x][i][1], arr2[x][i][2]);
         ctx.fillStyle = color;
         ctx.fillRect(x*scale2, i*scale2, scale2, scale2);
-        console.log('i '+i+',x '+x);
+        //console.log('i '+i+',x '+x);
     });
 }
 
-
+//let imageData = new ImageData(arr2, 32, 32);
+//ctx.putImageData(imageData, scale2, scale2);
+let img = new Image();  // Создание нового объекта изображения
+img.src = 'image.png';  // Путь к изображению которое необходимо нанести на холст
+ctx.drawImage(img, 0, 0, 512, 512);
