@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="883037a5-ab69-448d-a492-fa37cae5799e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4x4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeJam_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/colors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/palette.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/parsing.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/rss-codejam-canvas.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/to-do-part1.JPG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../figma/repair-design-project" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -67,7 +78,9 @@
       <workItem from="1572085093507" duration="432000" />
       <workItem from="1572087079666" duration="1259000" />
       <workItem from="1572115590822" duration="7274000" />
-      <workItem from="1572157210543" duration="4895000" />
+      <workItem from="1572157210543" duration="5528000" />
+      <workItem from="1572175485290" duration="654000" />
+      <workItem from="1573290622992" duration="7767000" />
     </task>
     <servers />
   </component>

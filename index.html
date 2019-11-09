@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css"/>
+
+    <title>CodeJam-Palette</title>
+</head>
+<body>
+    <header>
+        <button class="dropbtn"><img src="materials/dropdown.png" alt="dropdown"></button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <h1>CodeJam - Palette</h1>
+        <div class="right-menu">
+            <img src="materials/right_menu_icon.svg" alt="Right menu icon">
+        </div>
+    </header>
+    <main>
+        <section class="user-panels">
+            <section class="user-panels__tools-palette">
+                <div class="user-panels__fill-area-tool">
+                    <img src="materials/bucket.svg" alt="Fill bucket">
+                    <span>Fill bucket</span>
+                </div>
+                <div class="user-panels__choose-color-tool">
+                    <img src="materials/pipet.svg" alt="Pipet">
+                    <span>Choose color</span>
+                </div>
+                <div class="user-panels__move-tool">
+                    <img src="materials/move-tool.svg" alt="Move-tool">
+                    <span>Move</span>
+                </div>
+                <div class="user-panels__transform-tool">
+                    <img src="materials/transform.svg" alt="Arrows">
+                    <span>Transform</span>
+                </div>
+            </section>
+            <section class="user-panels__colors-palette">
+                <div class="user-panels__current-color">
+                    <input type="color" id="current-color" name="current-color" value="#FFFFFF">
+                    <label for="current-color">Current color</label>
+                </div>
+                <div class="user-panels__previous-color">
+                    <input type="color" id="previous-color" name="previous-color" value="#FFFFFF">
+                    <label for="previous-color">Prev color</label>
+                </div>
+                <div class="user-panels__red-input">
+                    <input type="color" id="red-input" name="red-input" value="#FF0000">
+                    <label for="red-input">red</label>
+                </div>
+                <div class="user-panels__blue-input">
+                    <input type="color" id="blue-input" name="blue-input" value="#2565AE">
+                    <label for="blue-input">blue</label>
+                </div>
+            </section>
+        </section>
+        <section class="canvas-part">
+            <canvas height='512' width='512' id='example'>Обновите браузер</canvas>
+        </section>
+        <section class="switch">
+            <form>
+                <p>Select a picture to display</p>
+                <div class="picture-choice">
+                    <input type="radio" id="tracery" name="picture" value="tracery">
+                    <label for="tracery">Tracery</label>
+                </div>
+                <div class="picture-choice">
+                    <input type="radio" id="logo" name="picture" value="logo">
+                    <label for="logo">Codewars logo</label>
+                </div>
+                <div class="picture-choice">
+                    <input type="radio" id="rs-pic" name="picture" value="rs-pic">
+                    <label for="rs-pic">RS School</label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

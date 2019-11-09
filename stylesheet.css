@@ -1,10 +1,18 @@
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("materials/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("materials/fonts/Roboto-Light.ttf");
+}
 header {
   width: 100%;
-  max-width: 1441px;
   height: 48px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 5px 3px gray;
+  box-shadow: 0 5px 3px gray;
 }
 header .dropbtn {
   width: 40px;
@@ -28,7 +36,7 @@ header .dropdown-content {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 header .dropdown-content a {
@@ -38,27 +46,105 @@ header .dropdown-content a {
   display: block;
 }
 header h1 {
-  font-family: Roboto;
+  justify-self: start;
+  font-family: "Roboto Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  /* identical to box height */
   color: rgba(0, 0, 0, 0.87);
+}
+header .right-menu {
+  height: 100%;
+  margin: 0 25px;
+  display: flex;
 }
 
 main {
   width: 100%;
-  max-width: 1441px;
+  height: 650px;
   padding-top: 73px;
   display: flex;
   justify-content: space-between;
 }
-main .user-panel {
+main .user-panels {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 25px;
   justify-content: space-between;
+}
+main .user-panels__tools-palette {
+  padding: 15px 0;
+  border: 1px solid gray;
+  box-shadow: 1px 4px 4px gray;
+}
+main .user-panels__fill-area-tool,
+main .user-panels__choose-color-tool,
+main .user-panels__move-tool,
+main .user-panels__transform-tool {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+main .user-panels__fill-area-tool span,
+main .user-panels__choose-color-tool span,
+main .user-panels__move-tool span,
+main .user-panels__transform-tool span {
+  margin-left: 30px;
+  font-family: "Roboto Light", sans-serif;
+}
+main .user-panels__choose-color-tool {
+  border-bottom: 1px solid gray;
+}
+main .user-panels__colors-palette {
+  padding: 15px 0;
+  border: 1px solid gray;
+  box-shadow: 1px 4px 4px gray;
+}
+main .user-panels__current-color,
+main .user-panels__previous-color,
+main .user-panels__red-input,
+main .user-panels__blue-input {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+main .user-panels__current-color label,
+main .user-panels__previous-color label,
+main .user-panels__red-input label,
+main .user-panels__blue-input label {
+  margin-left: 15px;
+  font-family: "Roboto Light", sans-serif;
+}
+main .user-panels__previous-color {
+  border-bottom: 1px solid gray;
+}
+main #current-color,
+main #previous-color,
+main #red-input,
+main #blue-input {
+  -webkit-appearance: none;
+  padding: 0;
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+main #current-color::-webkit-color-swatch,
+main #previous-color::-webkit-color-swatch,
+main #red-input::-webkit-color-swatch,
+main #blue-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+main #current-color::-webkit-color-swatch-wrapper,
+main #previous-color::-webkit-color-swatch-wrapper,
+main #red-input::-webkit-color-swatch-wrapper,
+main #blue-input::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
 }
 main .switch {
   font-family: Arial, Tahoma, serif;
