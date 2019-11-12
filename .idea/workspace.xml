@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="883037a5-ab69-448d-a492-fa37cae5799e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../figma/repair-design-project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codejam-virtual-keyboard" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -68,7 +73,9 @@
       <workItem from="1572115590822" duration="7274000" />
       <workItem from="1572157210543" duration="5528000" />
       <workItem from="1572175485290" duration="654000" />
-      <workItem from="1573290622992" duration="8544000" />
+      <workItem from="1573290622992" duration="9128000" />
+      <workItem from="1573497122681" duration="652000" />
+      <workItem from="1573577161376" duration="1923000" />
     </task>
     <servers />
   </component>

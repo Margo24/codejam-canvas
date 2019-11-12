@@ -10,7 +10,6 @@ header {
   width: 100%;
   height: 48px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 5px 3px gray;
 }
@@ -46,7 +45,7 @@ header .dropdown-content a {
   display: block;
 }
 header h1 {
-  justify-self: start;
+  margin-right: auto;
   font-family: "Roboto Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -93,11 +92,8 @@ main .user-panels__transform-tool span {
   margin-left: 30px;
   font-family: "Roboto Light", sans-serif;
 }
-main .user-panels__choose-color-tool {
-  border-bottom: 1px solid gray;
-}
 main .user-panels__colors-palette {
-  padding: 15px 0;
+  padding: 15px;
   border: 1px solid gray;
   box-shadow: 1px 4px 4px gray;
 }
@@ -107,44 +103,30 @@ main .user-panels__red-input,
 main .user-panels__blue-input {
   display: flex;
   align-items: center;
-  padding: 12px 25px;
+  padding: 10px;
 }
-main .user-panels__current-color label,
-main .user-panels__previous-color label,
-main .user-panels__red-input label,
-main .user-panels__blue-input label {
+main .user-panels__current-color span,
+main .user-panels__previous-color span,
+main .user-panels__red-input span,
+main .user-panels__blue-input span {
   margin-left: 15px;
   font-family: "Roboto Light", sans-serif;
 }
-main .user-panels__previous-color {
-  border-bottom: 1px solid gray;
-}
-main #current-color,
-main #previous-color,
-main #red-input,
-main #blue-input {
-  -webkit-appearance: none;
-  padding: 0;
-  border: 1px solid gray;
-  border-radius: 50%;
+main .user-panels_color-value {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
-main #current-color::-webkit-color-swatch,
-main #previous-color::-webkit-color-swatch,
-main #red-input::-webkit-color-swatch,
-main #blue-input::-webkit-color-swatch {
-  border: none;
-  border-radius: 10px;
-  padding: 0;
+main .current-color,
+main .previous-color {
+  background-color: #FFFFFF;
 }
-main #current-color::-webkit-color-swatch-wrapper,
-main #previous-color::-webkit-color-swatch-wrapper,
-main #red-input::-webkit-color-swatch-wrapper,
-main #blue-input::-webkit-color-swatch-wrapper {
-  border: none;
-  border-radius: 10px;
-  padding: 0;
+main .red {
+  background-color: #FF0000;
+}
+main .blue {
+  background-color: #2565AE;
 }
 main .switch {
   font-family: Arial, Tahoma, serif;
