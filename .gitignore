@@ -62,4 +62,4 @@ typings/
 .next
 
 *.css.map
-*.css
+*.scss
