@@ -63,3 +63,7 @@ typings/
 
 *.css.map
 *.scss
+
+# Ignore sass-cache files.
+*.sass-cache*
+
